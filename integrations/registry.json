@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "servers": [
+    {"service":"Higgsfield","codex":"PENDING_SETUP","claude":"PENDING_SETUP","transport":"UNVERIFIED","capabilities":[],"auth":"UNVERIFIED","requiredAction":"Verify official MCP documentation and authorize connection; do not install or generate yet"}
+  ]
+}

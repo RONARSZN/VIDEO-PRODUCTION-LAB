@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "note": "Status is a dated observation, not a credential store. Run doctor for machine-specific checks.",
+  "accounts": [
+    {"service":"Codex CLI","method":"official CLI login","authStatus":"CHECK_ON_DEVICE","health":"CHECK_ON_DEVICE","capabilities":["local agent"],"requiredAction":"Run codex login if status check fails"},
+    {"service":"Claude Code","method":"official CLI login","authStatus":"CHECK_ON_DEVICE","health":"CHECK_ON_DEVICE","capabilities":["local agent"],"requiredAction":"Run claude login if session unavailable"},
+    {"service":"GitHub","method":"Git Credential Manager or gh","authStatus":"CHECK_ON_DEVICE","health":"CHECK_ON_DEVICE","capabilities":["private Git remote when authorized"],"requiredAction":"Run gh auth login only if needed"},
+    {"service":"Google Drive / Gmail","method":"agent-specific verified MCP OAuth","authStatus":"NOT_CONFIGURED","health":"NOT_CHECKED","capabilities":[],"requiredAction":"Authorize each agent separately after selecting official integration"},
+    {"service":"Canva / YouTube / Meta","method":"agent-specific verified OAuth/API","authStatus":"NOT_CONFIGURED","health":"NOT_CHECKED","capabilities":[],"requiredAction":"Verify provider integration and scopes; authorize only when needed"},
+    {"service":"Higgsfield","method":"future verified MCP","authStatus":"PENDING_SETUP","health":"OPTIONAL","capabilities":[],"requiredAction":"No action now"}
+  ]
+}
